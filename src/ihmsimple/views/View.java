@@ -85,7 +85,7 @@ public class View extends javax.swing.JFrame {
      *
      * @return la référence au contrôleur de l'application
      */
-    public Controller getRefCtrl() {
+    public Controller getRefCtrl(Controller refCtrl) {
         return refCtrl;
     }
 

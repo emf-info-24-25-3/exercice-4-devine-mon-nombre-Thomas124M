@@ -1,9 +1,8 @@
 package ihmsimple.app;
 
-import java.lang.ModuleLayer.Controller;
-
 import ihmsimple.services.ServiceDevine;
 import ihmsimple.views.View;
+import ihmsimple.ctrl.Controller;
 
 public class IhmSimple {
     
@@ -18,12 +17,13 @@ public class IhmSimple {
         // VOTRE CODE ICI...
         Controller refCtrl = new Controller();
         ServiceDevine refServiceDevine = new ServiceDevine();
-        refCtrl.setRefServiceDevine(refServiceDevine);
         View refView = new View();
+
+        refCtrl.setRefServiceDevine(refServiceDevine);
         refCtrl.setRefView(refView);
-        refView.setRefCtrl(null);
-        refServiceDevine.setRefCtrl(null);
         refCtrl.start();
+        refView.setRefCtrl(refCtrl);;
+        refServiceDevine.setRefCtrl(null);
     }
 
 }

@@ -37,7 +37,7 @@ public class Controller {
      * qu’elles valeurs initiales donner. Pour la valeur initiale de l’attribut
      * nombre, utilisez NOMBRE_INVALIDE.
      */
-    public Controller() {
+    public Controller(){
         // VOTRE CODE ICI...
         //this.nombre = NOMBRE_INVALIDE;
         //this.refView = refView;
